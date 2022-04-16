@@ -1,0 +1,23 @@
+CREATE DATABASE IF NOT EXISTS `emailsoftware`;
+USE `emailsoftware`;
+
+CREATE TABLE IF NOT EXISTS `account` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `fname` longtext,
+  `lname` longtext,
+  `username` longtext,
+  `password` longtext,
+  `phonenum` longtext,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `email` (
+  `sender` longtext,
+  `receiver` longtext,
+  `content` longtext,
+  `date` longtext,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `subject` longtext,
+  `status` longtext,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
